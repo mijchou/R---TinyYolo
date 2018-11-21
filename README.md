@@ -1,6 +1,6 @@
 # R---TinyYolo
 
-You only look once (YOLO) is a system for image detection built on the Pascal VOC 2012 dataset. It detects the 20 Pascal object classes: person, bird, cat, cow, dog, horse, sheep, aeroplane, bicycle, boat, bus, car, motorbike, train, bottle, chair, dining table, potted plant, sofa and tv/monitor. The following project is built with a pre-trained model.
+You only look once (YOLO) is a system for image detection built on the Pascal VOC 2012 dataset. It detects the 20 [Pascal](http://host.robots.ox.ac.uk:8080/pascal/VOC/) object classes: person, bird, cat, cow, dog, horse, sheep, aeroplane, bicycle, boat, bus, car, motorbike, train, bottle, chair, dining table, potted plant, sofa and tv/monitor. In the following project we will be building a quick image-detector from the YOLO system:
 
 Setup
 =====
@@ -23,17 +23,17 @@ Model Calling
 
 We will be using 2 random photos I took!
 
-![photo1](/aucklandairport.jpeg)
+![photo1](/aucklandairport.jpeg) <br>
 ![photo2](/customst.jpeg)
 
-Detection will be done through the function *image_darknet_model()*.
-Two options for the *type* argument--detect and classify.
-**Detect**: detect objects recognized in the photo.
+Detection will be done through the function *image_darknet_model()*. <br>
+Two options for the *type* argument--detect and classify. <br>
+**Detect**: detect objects recognized in the photo. <br>
 **Classify**: classify what the object present in the photo is.
 
-Models Available for selections:
-**detection**: YOLO, YOLO tiny trained on VOC and on COCO
-**classification*: Alexnet, Darknet, VGG-16, Extraction(GoogleNet), Darknet19, Darknet19_448, Tiny Darknet trained on Imagenet
+Models Available for selections: <br>
+**detection**: YOLO, YOLO tiny trained on VOC and on COCO <br>
+**classification**: Alexnet, Darknet, VGG-16, Extraction(GoogleNet), Darknet19, Darknet19_448, Tiny Darknet trained on Imagenet
 
 ``` r
 yolo_tiny_voc <- image_darknet_model(type = 'detect',
@@ -63,7 +63,7 @@ customst <- image_darknet_detect(file = "E:/Projects/Tiny-yolo/customst.jpeg",
 Results
 =======
 
-![photo1p](/predictions_airp.png)
+![photo1p](/predictions_airp.png) <br>
 ![photo2p](/predictions_cust.png)
 
 
